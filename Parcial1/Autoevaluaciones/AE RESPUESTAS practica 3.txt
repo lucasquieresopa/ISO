@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+1-Respuesta 1
+Equivale a: test expresión
+Respuesta 2
+Equivale a: expr expresión
+Respuesta 3
+Escribe "cadena" al final de "archivo"
+Respuesta 4
+Sobreescribe "archivo" con el string "cadena"
+Respuesta 5
+Busca el string "archivo" dentro del string "cadena"
+Respuesta 6
+Equivale a: `./archivo
+Respuesta 7
+Guarda lo que imprime "archivo" al ejecutarse adentro de la variable "cadena"
+
+2-La respuesta correcta es: #
+
+
+3-La respuesta correcta es:
+mayor() {
+if [ $1 > $2 ]; then echo $1; else echo $2; fi
+}
+
+4-Las respuestas correctas son:
+for i in `seq 1 100`
+do
+echo "$i"
+done,
+for i in `seq 1 100`; do echo "$i"; done,
+for i in $(seq 1 100); do echo "$i"; done
+
+5-Las respuestas correctas son: if test -r /home/pepe; then echo "Tengo permisos de lectura"; fi,
+if [ "$nombre" == "Maria" ]
+then
+echo "Es igual"
+fi
+
+6-Las respuestas correctas son: echo ${arreglo[1]}, echo ${#arreglo[*]}, arreglo=(3 4 5), agregar un nuevo elemento: arreglo+=(5)
+
+7-Las respuestas correctas son: expr 4 + 5, expr 5 != 5, expr length "PEPE"
+
+8-Las respuestas correctas son: echo $NOMBRE, DIRECCION="56 nro 436", echo ${DIRECCION}
+
+9-La respuesta correcta es: ` `
+
+10-La respuesta correcta es: muestra los archivos llamados pepe, siempre y cuando tenga permisos de acceso a ellos
+
+11-La respuesta correcta es: Evalua si el archivo o directorio existe y se tiene el permiso de escritura
+
+12-La respuesta correcta es: La cantidad de parametros que se enviaron
+
+
+13-La respuesta correcta es: Imprime los nombres de los usuarios que empiecen con la letra a
+
+14-Las respuestas correctas son: Cuando el valor de i llega al 53, el script termina., Imprime que los valores 25 y 50 son divisibles por 25
+
+15-Las respuestas correctas son:
+function x{
+    echo $1 | grep $2
+}
+,
+x(){
+    echo $1 | grep $2
+}
+
+16-Las respuestas correctas son:
+cat archivo | wc -c
+# equivale a:
+wc -c archivo | cut -d' ' -f1
+,
+find -name archivo
+# equivale a:
+find . -name archivo
+,
+grep ac archivo
+# equivale a:
+cat archivo | grep ac
+,
+echo hola | cat > salida
+# equivale a:
+echo hola > salida
+
+17-Las respuestas correctas son: Si "archivo" existe y contiene el string "menta" imprime "Z", sino imprime "Q", Sin los paréntesis el resultado sería el mismo
+
+
+18-La respuesta correcta es: 192.168.1.112
+
+
+19-Las respuestas correctas son:
+#!/bin/sh
+echo $*
+,
+#!/bin/sh
+for arg in $*; do
+    echo $arg
+done
+,
+#!/bin/sh
+for arg in $@; do
+    echo $arg
+done
+
+20-Las respuestas correctas son:
+#!/bin/sh
+echo $1
+,
+#!/bin/sh
+for i; do
+echo $i
+break
+done
+
+21-La respuesta correcta es: Genera un archivo comprimido con el contenido del directorio actual y lo descomprime en /tmp
+
+
+22-La respuesta correcta es: Imprime el tamaño en MiB del archivo "xyz"
+
+
+23-La respuesta correcta es: Quiero aprobar
